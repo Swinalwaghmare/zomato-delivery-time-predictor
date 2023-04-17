@@ -25,7 +25,7 @@ def get_requirements(file_path:str)->List[str]:
 
 
 setup(
-    name='Housing_price_prediction',
+    name='zomato-delivery-time-predictor',
     version='0.0.1',
     author='Swinal',
     author_email='swinalwaghmare2802@gmail.com',
