@@ -189,8 +189,3 @@ class DataTransformation:
             logging.info("Exception occured in initiate data transformation")
             raise  ZomatoException(e,sys)
             
-if __name__ == "__main__":
-    ingestion = data_ingestion.DataIngestion()
-    train ,test = ingestion.initiate_data_ingestion()
-    transformation = DataTransformation()
-    transformation.initiate_data_transforamtion(train,test)
