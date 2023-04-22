@@ -19,3 +19,5 @@ PREPROCESSING_OBJ_PATH = os.path.join(ROOT_DIR,ARTIFACT_DIR_KEY,
                                       DATA_TRANSFORMATION_ARTIFACT,
                                       DATA_TRANSFORMATION_PREPROCESSING_OBJ)
 
+MODEL_FILE_PATH = os.path.join(ROOT_DIR,ARTIFACT_DIR_KEY,
+                               MODEL_ARTIFACT,MODEL_OBJECT)
