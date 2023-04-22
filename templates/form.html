@@ -1,0 +1,76 @@
+<html>
+<body text='white' bgcolor='#CB202D'>
+  <h1>
+    <font face="Montserrat" size="45">
+        Zomato Delivery Time Prediction
+    </font>
+  </h1>
+    <form action="{{url_for('predict_datapoint')}}" method="POST">
+      <table>
+        <tr>
+          <th><label for="Delivery_person_Age">Age</label></th>
+          <td><input type="text" id="Delivery_person_Age" name="Delivery_person_Age" placeholder="Enter age value (int)"></td>
+        </tr>
+        <tr>
+            <th><label for="Delivery_person_Ratings">Rating</label></th>
+            <td><input type="text" id="Delivery_person_Ratings" name="Delivery_person_Ratings" placeholder="Enter rating value (float)"></td>
+          </tr>
+        <tr>
+          <th><label for="Weather_conditions">Weather</label></th>
+          <td>
+            <select id="Weather_conditions" name="Weather_conditions">
+              <option value="Sunny">Sunny</option>
+              <option value="Cloudy">Cloudy</option>
+              <option value="Fog">Fog</option>
+              <option value="Windy">Windy</option>
+              <option value="Sandstorms">Sandstorms</option>
+              <option value="Stormy">Stormy</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="Road_traffic_density">Traffic</label></th>
+          <td>
+            <select id="Road_traffic_density" name="Road_traffic_density">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+              <option value="Jam">Jam</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="Vehicle_condition">Vehical Condition</label></th>
+          <td>
+            <select id="Vehicle_condition" name="Vehicle_condition">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+            <th><label for="multiple_deliveries">No. of Deliverys</label></th>
+            <td>
+              <select id="multiple_deliveries" name="multiple_deliveries">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </td>
+          </tr>
+        <tr>
+          <th><label for="Dist_from_Rest_to_deli_loc">Dist from Rest to loc</label></th>
+          <td><input type="text" id="Dist_from_Rest_to_deli_loc" name="Dist_from_Rest_to_deli_loc" placeholder="Enter table value (float)"></td>
+        </tr>
+      </table>
+      <input type="submit" value="Submit">
+    </form>    
+       
+        <h1>
+          Delivery come in {{final_result}} minutes</h1>
+        
+        </body>
+        </html>
