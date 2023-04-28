@@ -11,5 +11,6 @@ pip install -r requirements.txt
 python src/pipeline/training_pipeline.py
 
 # Run app.py
-python app.py
+python application.py
 ```
+
